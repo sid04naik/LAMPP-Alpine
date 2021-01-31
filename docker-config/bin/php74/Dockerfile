@@ -14,7 +14,7 @@ RUN apk upgrade
 RUN apk add inotify-tools
 
 # install zsh
-RUN apk add zsh zsh-vcs
+RUN apk add zsh zsh-vcs nano
 
 # install php
 RUN apk add \
@@ -41,7 +41,10 @@ RUN apk add \
     php7-tokenizer \
     php7-xml \
     php7-xmlwriter \
-    php7-zip
+    php7-zip \
+    php7-intl \
+    php7-exif \
+    php7-gd
 
 # install composer
 RUN apk add composer
