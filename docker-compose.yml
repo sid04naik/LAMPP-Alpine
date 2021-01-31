@@ -32,7 +32,8 @@ services:
   #     MYSQL_USER: ${MYSQL_USER}
   #     MYSQL_PASSWORD: ${MYSQL_PASSWORD}
   # phpmyadmin:
-  #   image: phpmyadmin
+  #   build:
+  #     context: ${SERVER_ROOT}/bin/phpmyadmin
   #   container_name: 'phpmyadmin'
   #   links:
   #     - database
