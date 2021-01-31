@@ -28,9 +28,6 @@ services:
   #     - ${SERVER_ROOT}${MYSQL_LOG_DIR}:/var/log/mysql
   #   environment:
   #     MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
-  #     MYSQL_DATABASE: ${MYSQL_DATABASE}
-  #     MYSQL_USER: ${MYSQL_USER}
-  #     MYSQL_PASSWORD: ${MYSQL_PASSWORD}
   # phpmyadmin:
   #   build:
   #     context: ${SERVER_ROOT}/bin/phpmyadmin
@@ -46,7 +43,3 @@ services:
   #     PMA_HOST: database
   #     PMA_PORT: ${HOST_MACHINE_MYSQL_PORT}
   #     MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
-  #     PMA_USER: ${MYSQL_USER}
-  #     PMA_PASSWORD: ${MYSQL_PASSWORD}
-  #     MYSQL_USER: ${MYSQL_USER}
-  #     MYSQL_PASSWORD: ${MYSQL_PASSWORD}
