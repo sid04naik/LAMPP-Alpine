@@ -91,7 +91,6 @@ ADD --chown=root:root includes/start.sh includes/vhosts.conf /tmp/
 RUN mv /tmp/vhosts.conf /etc/apache2/conf.d/vhosts.conf
 RUN chmod +x /tmp/start.sh
 
-
 # set working dir
 WORKDIR /var/www/html/
 

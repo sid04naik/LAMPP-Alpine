@@ -14,7 +14,7 @@ RUN apk upgrade
 RUN apk add inotify-tools
 
 # install zsh
-RUN apk add zsh zsh-vcs
+RUN apk add zsh zsh-vcs nano
 
 # install php
 RUN apk add \
@@ -43,8 +43,8 @@ RUN apk add \
     php7-xmlwriter \
     php7-zip \
     php7-intl \
-    php7-gd \
-    php7-exif
+    php7-exif \
+    php7-gd
 
 # install composer
 RUN apk add composer
@@ -90,7 +90,6 @@ ADD --chown=root:root includes/start.sh includes/vhosts.conf /tmp/
 # make entry point script executable
 RUN mv /tmp/vhosts.conf /etc/apache2/conf.d/vhosts.conf
 RUN chmod +x /tmp/start.sh
-
 
 # set working dir
 WORKDIR /var/www/html/
