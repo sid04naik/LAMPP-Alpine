@@ -1,1 +1,1 @@
-<?php echo "Project 2"; ?>
+<?php echo phpinfo(); ?>
